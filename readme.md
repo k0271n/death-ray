@@ -9,7 +9,7 @@ This is a simple and small game made in Raylib that follows a cube which tries n
 
 # Notes
 
-- This contains Raylib version 5.5 per [his Github page.](https://github.com/raysan5/raylib.)
+- This contains Raylib version 5.5 per [his Github page.](https://github.com/raysan5/raylib)
 - It follows standard hierarchy practices.
 - Given the nature of Raylib, all library and header files are stored locally.
 	- Executables are built statically.
