@@ -1,4 +1,4 @@
-# Death-Ray Preface
+# Preface
 
 This is a simple and small game made in Raylib that follows a cube which tries not to be obliterated by a death ray.
 
