@@ -1,19 +1,4 @@
-/*
-
-Death Ray code, built on: raylib [core] example - 2D Camera platformer.
-
-Example originally created with raylib 2.5, last time updated with raylib 3.0.
-
-Edited in 2024 for Death Ray, a simple fork.
-
-Example contributed by arvyy (@arvyy) and reviewed by Ramon Santamaria (@raysan5).
-
-Example licensed under an unmodified zlib/libpng license, which is an OSI-certified,
-BSD-like license that allows static linking with closed source software.
-
-Copyright (c) 2019-2024 arvyy (@arvyy).
-
-*/
+// See this project's readme.md for more information.
 
 #include "../include/raylib.h"
 #include "../include/raymath.h"
