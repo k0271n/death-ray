@@ -6,6 +6,7 @@ This is a simple and small game made in Raylib that follows a cube which tries n
 
 - Functioning GPU and CPU hardware.
 - Roughly 5 megabytes of available storage space.
+- GCC or MinGW installed and running.
 
 # Notes
 
