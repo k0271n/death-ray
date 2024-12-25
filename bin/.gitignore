@@ -1,2 +1,3 @@
 # Ignore output within the bin folder.
-/bin/*
+*
+!.gitignore
