@@ -30,7 +30,8 @@ typedef struct EnvItem {
 } EnvItem;
 
 // Starting time and current time before the Death Ray spawns in.
-int deathRaySpawnTime = 0;
+int deathRaySpawnTime = 15;
+int spawnTimer = 0;
 
 // Module functions declaration:
 void UpdatePlayer(Player *player, EnvItem *envItems, int envItemsLength, float delta);
@@ -141,8 +142,14 @@ int main(void)
           CloseWindow(); 
         }
       
+        // Spawn the deathRay.
+        if (spawnTimer < deathRaySpawnTime)
+        {
+          spawnTimer += GetFrameTime(); // Add frame time to elapsed time.
+        }
+      
         // Make the deathRay move.
-        if (deathRaySpawnTime == 0)
+        if (spawnTimer == deathRaySpawnTime)
         {
           deathRay.position.x -= deathRay.speed * GetFrameTime();
         }
@@ -181,8 +188,10 @@ int main(void)
             DrawText("Current camera mode:", 20, 120, 10, BLACK);
             DrawText(cameraDescriptions[cameraOption], 40, 140, 10, DARKGRAY);
             DrawText("Current player positions:", 20, 160, 10, BLACK);
-            DrawText(TextFormat ("True X Position: %12.3f", player.position.x), 40, 180, 10, DARKGRAY);
-            DrawText(TextFormat ("True Y Position: %12.3f", player.position.y), 40, 200, 10, DARKGRAY);
+            DrawText(TextFormat("True X Position: %12.3f", player.position.x), 40, 180, 10, DARKGRAY);
+            DrawText(TextFormat("True Y Position: %12.3f", player.position.y), 40, 200, 10, DARKGRAY);
+      
+            DrawText(TextFormat("The Death Ray will spawn in: %d", deathRaySpawnTime), 20, 220, 10, MAROON);
 
         EndDrawing();
     }
