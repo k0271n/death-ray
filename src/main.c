@@ -1,4 +1,4 @@
-// See this project's readme.md for more information.
+// Read this project's readme.md for more information.
 
 #include "../include/raylib.h"
 #include "../include/raymath.h"
@@ -141,7 +141,7 @@ int main(void)
         {
           CloseWindow(); 
         }
-      
+
         // Spawn the deathRay.
         if (spawnTimer < deathRaySpawnTime)
         {
