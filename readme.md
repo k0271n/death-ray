@@ -1,6 +1,8 @@
 # death-ray
 
-This is a simple and small game made in Raylib that follows a cube which tries not to be obliterated by a death ray.
+This is a simple, small demonstration made in Raylib, following a cube which tries not to be obliterated by a death ray.
+
+It exists because I wanted to play with the Raylib engine.
 
 # Requirements
 
